@@ -113,14 +113,12 @@ $.get('/load/some_data', function(data){
 * `set` - set current steps configuration. Arguments: config  
 * `run` - run the current script. Has no arguments  
 * `resume` - resume the script from the step where it was stopped. Has no arguments  
-* `getCurrentStep` - returns the current step index
-* `trigger` -  After writing this code you can either move to the next step or finish with EnjoyHint (next|skip)
+* `getCurrentStep` - returns the current step index  
 
 #### Events
 **Script Events**:
 * `onStart` - fires on the first step.
 * `onEnd` - fires after the last step in script.
-* `onSkip` - fires after user has clicked skip.
 ```javascript
 var enjoyhint_instance = new EnjoyHint({
   onStart:function(){
